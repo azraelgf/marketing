@@ -2221,19 +2221,19 @@ textarea.input {
   }
 
   .button span {
-    translate: 0 1.25rem;
+    translate: 0 0.625rem;
   }
 
   .title_h1 {
-    translate: 0 1.25rem;
+    translate: 0 0.625rem;
   }
 
   .title_h2 {
-    translate: 0 1.25rem;
+    translate: 0 0.625rem;
   }
 
   .title_h3 {
-    translate: 0 1.25rem;
+    translate: 0 0.625rem;
   }
 
   .marque__inner .title_h3 {
