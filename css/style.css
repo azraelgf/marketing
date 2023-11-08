@@ -1063,17 +1063,16 @@ textarea.input {
   position: relative;
 }
 
-.experts__body {
+.experts__items {
   position: relative;
   z-index: 2;
-}
-
-.experts__slide {
-  padding-top: 9.6875rem;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18.125rem, 1fr));
+  padding-top: 10.9375rem;
 }
 
 .item-expert {
-  padding: 1.5625rem;
   background-color: var(--objects-rose);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1519,20 +1518,8 @@ textarea.input {
     background: url("../img/expert-bg.svg") no-repeat bottom/cover;
   }
 
-  .experts__wrapper.swiper-wrapper {
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(21.25rem, 1fr));
-  }
-
   .feedback__contacts {
     border-radius: 20rem/17.5rem;
-  }
-}
-
-@media (min-width: 61.99875em) and (min-width: 100em) {
-  .experts__wrapper.swiper-wrapper {
-    gap: 2.5rem;
   }
 }
 
@@ -1687,6 +1674,20 @@ textarea.input {
 
   .item-what__num {
     margin-bottom: 1.25rem;
+  }
+
+  .experts__items {
+    -webkit-column-gap: 2.5rem;
+       -moz-column-gap: 2.5rem;
+            column-gap: 2.5rem;
+  }
+
+  .experts__items {
+    row-gap: 13.4375rem;
+  }
+
+  .item-expert {
+    padding: 1.5625rem;
   }
 
   .item-expert__list li {
@@ -1994,6 +1995,20 @@ textarea.input {
 
   .item-what__num {
     margin-bottom: 0.625rem;
+  }
+
+  .experts__items {
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+  }
+
+  .experts__items {
+    row-gap: 12.1875rem;
+  }
+
+  .item-expert {
+    padding: 1.25rem;
   }
 
   .item-expert__list li {
@@ -2768,6 +2783,46 @@ textarea.input {
     }
 }
 
+@supports ((-moz-column-gap: clamp( 1.25rem , 0.8616504854rem  +  1.9417475728vw , 2.5rem )) or (column-gap: clamp( 1.25rem , 0.8616504854rem  +  1.9417475728vw , 2.5rem ))) {
+    .experts__items {
+      -webkit-column-gap: clamp( 1.25rem , 0.8616504854rem  +  1.9417475728vw , 2.5rem );
+         -moz-column-gap: clamp( 1.25rem , 0.8616504854rem  +  1.9417475728vw , 2.5rem );
+              column-gap: clamp( 1.25rem , 0.8616504854rem  +  1.9417475728vw , 2.5rem );
+    }
+}
+
+@supports not ((-moz-column-gap: clamp( 1.25rem , 0.8616504854rem  +  1.9417475728vw , 2.5rem )) or (column-gap: clamp( 1.25rem , 0.8616504854rem  +  1.9417475728vw , 2.5rem ))) {
+    .experts__items {
+      -webkit-column-gap: calc(1.25rem + 1.25 * (100vw - 20rem) / 64.375);
+         -moz-column-gap: calc(1.25rem + 1.25 * (100vw - 20rem) / 64.375);
+              column-gap: calc(1.25rem + 1.25 * (100vw - 20rem) / 64.375);
+    }
+}
+
+@supports (row-gap: clamp( 12.1875rem , 11.7991504854rem  +  1.9417475728vw , 13.4375rem )) {
+    .experts__items {
+      row-gap: clamp( 12.1875rem , 11.7991504854rem  +  1.9417475728vw , 13.4375rem );
+    }
+}
+
+@supports not (row-gap: clamp( 12.1875rem , 11.7991504854rem  +  1.9417475728vw , 13.4375rem )) {
+    .experts__items {
+      row-gap: calc(12.1875rem + 1.25 * (100vw - 20rem) / 64.375);
+    }
+}
+
+@supports (padding: clamp( 1.25rem , 1.1529126214rem  +  0.4854368932vw , 1.5625rem )) {
+    .item-expert {
+      padding: clamp( 1.25rem , 1.1529126214rem  +  0.4854368932vw , 1.5625rem );
+    }
+}
+
+@supports not (padding: clamp( 1.25rem , 1.1529126214rem  +  0.4854368932vw , 1.5625rem )) {
+    .item-expert {
+      padding: calc(1.25rem + 0.3125 * (100vw - 20rem) / 64.375);
+    }
+}
+
 @supports (font-size: clamp( 1rem , 0.9611650485rem  +  0.1941747573vw , 1.125rem )) {
     .item-expert__list li {
       font-size: clamp( 1rem , 0.9611650485rem  +  0.1941747573vw , 1.125rem );
@@ -3077,26 +3132,6 @@ textarea.input {
       height: calc(15rem + 7.5 * (100vw - 20rem) / 27.99875);
     }
 }
-}
-
-@media (min-width: 61.99875em) and (min-width: 62em) and (max-width: 100em) {
-@supports (gap: clamp( 1.25rem , -0.7894736842rem  +  3.2894736842vw , 2.5rem )) {
-    .experts__wrapper.swiper-wrapper {
-      gap: clamp( 1.25rem , -0.7894736842rem  +  3.2894736842vw , 2.5rem );
-    }
-}
-
-@supports not (gap: clamp( 1.25rem , -0.7894736842rem  +  3.2894736842vw , 2.5rem )) {
-    .experts__wrapper.swiper-wrapper {
-      gap: calc(1.25rem + 1.25 * (100vw - 62rem) / 38);
-    }
-}
-}
-
-@media (min-width: 61.99875em) and (max-width: 62em) {
-  .experts__wrapper.swiper-wrapper {
-    gap: 1.25rem;
-  }
 }
 
 @media (min-width: 30em) and (max-width: 100em) {
