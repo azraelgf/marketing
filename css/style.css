@@ -245,7 +245,7 @@ h6 {
   border-radius: 6.25rem;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
-  line-height: 120%;
+  line-height: 150%;
 }
 
 .button--fw {
