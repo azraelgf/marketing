@@ -876,6 +876,7 @@ textarea.input {
 }
 
 .video-btn {
+  pointer-events: none;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -2264,6 +2265,10 @@ textarea.input {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+
+  .feedback__contacts .mobile-social__link {
+    width: 100%;
   }
 
   .footer__container {
