@@ -226,9 +226,9 @@ h6 {
 }
 
 .button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0 2.25rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1845,7 +1845,7 @@ textarea.input {
   }
 
   .button {
-    min-height: 3.75rem;
+    min-height: 3.6875rem;
   }
 
   .section-bottom {
@@ -2339,15 +2339,15 @@ textarea.input {
     }
 }
 
-@supports (min-height: clamp( 3.75rem , 3.3616504854rem  +  1.9417475728vw , 5rem )) {
+@supports (min-height: clamp( 3.6875rem , 3.2797330097rem  +  2.0388349515vw , 5rem )) {
     .button {
-      min-height: clamp( 3.75rem , 3.3616504854rem  +  1.9417475728vw , 5rem );
+      min-height: clamp( 3.6875rem , 3.2797330097rem  +  2.0388349515vw , 5rem );
     }
 }
 
-@supports not (min-height: clamp( 3.75rem , 3.3616504854rem  +  1.9417475728vw , 5rem )) {
+@supports not (min-height: clamp( 3.6875rem , 3.2797330097rem  +  2.0388349515vw , 5rem )) {
     .button {
-      min-height: calc(3.75rem + 1.25 * (100vw - 20rem) / 64.375);
+      min-height: calc(3.6875rem + 1.3125 * (100vw - 20rem) / 64.375);
     }
 }
 
