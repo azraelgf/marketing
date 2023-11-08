@@ -226,7 +226,6 @@ h6 {
 }
 
 .button {
-  font-family: "Times New Roman", sans-serif;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -246,6 +245,7 @@ h6 {
   border-radius: 6.25rem;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
+  line-height: 1.2;
 }
 
 .button--fw {
@@ -1145,6 +1145,10 @@ textarea.input {
   gap: 3.125rem;
   -webkit-animation: scroll 15s infinite linear;
           animation: scroll 15s infinite linear;
+}
+
+.marque__item {
+  line-height: 1.2;
 }
 
 .item-follow {
