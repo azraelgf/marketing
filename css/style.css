@@ -1218,12 +1218,6 @@ textarea.input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
@@ -1423,6 +1417,15 @@ textarea.input {
     border-radius: 50%;
     opacity: 0.4;
     background: radial-gradient(50% 50% at 50% 50%, #8B298B 0%, #1B011B 100%);
+  }
+
+  .feedback__contacts {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -2265,10 +2268,6 @@ textarea.input {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-  }
-
-  .feedback__contacts .mobile-social__link {
-    width: 100%;
   }
 
   .footer__container {
