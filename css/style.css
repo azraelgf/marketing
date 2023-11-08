@@ -226,6 +226,7 @@ h6 {
 }
 
 .button {
+  font-family: "Times New Roman", sans-serif;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
