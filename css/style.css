@@ -226,10 +226,10 @@ h6 {
 }
 
 .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0 2.25rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 1.4375rem 2.25rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -779,7 +779,7 @@ textarea.input {
   border-radius: 1.25rem;
   text-align: center;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .about-program__start {
@@ -1536,10 +1536,6 @@ textarea.input {
     font-size: 1.875rem;
   }
 
-  .button {
-    min-height: 5rem;
-  }
-
   .section-bottom {
     padding-bottom: 8.75rem;
   }
@@ -1691,14 +1687,6 @@ textarea.input {
   .follow__marque {
     margin-bottom: 4.375rem;
   }
-
-  .marque {
-    padding-top: 1rem;
-  }
-
-  .marque {
-    padding-bottom: 1rem;
-  }
 }
 
 @media (min-width: 48em) {
@@ -1762,6 +1750,14 @@ textarea.input {
 
   .item-expert__img {
     height: 21.875rem;
+  }
+
+  .marque {
+    padding-top: 1rem;
+  }
+
+  .marque {
+    padding-bottom: 1rem;
   }
 }
 
@@ -1835,6 +1831,16 @@ textarea.input {
   }
 }
 
+@media (max-width: 30em) {
+  .marque {
+    padding-top: 0.6875rem;
+  }
+
+  .marque {
+    padding-bottom: 0.6875rem;
+  }
+}
+
 @media (max-width: 20em) {
   .form {
     gap: 1.25rem;
@@ -1842,10 +1848,6 @@ textarea.input {
 
   .button {
     font-size: 1.375rem;
-  }
-
-  .button {
-    min-height: 3.6875rem;
   }
 
   .section-bottom {
@@ -1991,14 +1993,6 @@ textarea.input {
 
   .follow__marque {
     margin-bottom: 1.875rem;
-  }
-
-  .marque {
-    padding-top: 0.6875rem;
-  }
-
-  .marque {
-    padding-bottom: 0.6875rem;
   }
 }
 
@@ -2217,6 +2211,10 @@ textarea.input {
 }
 
 @media (max-width: 29.99875em) {
+  .button {
+    padding: 1.125rem 2.25rem;
+  }
+
   .marque__inner .title_h3 {
     font-size: 1.5rem;
   }
@@ -2279,6 +2277,10 @@ textarea.input {
     padding-bottom: 134%;
   }
 
+  .who__btn {
+    min-width: 100%;
+  }
+
   .item-who i {
     right: 0.625rem;
     bottom: 0.625rem;
@@ -2291,6 +2293,10 @@ textarea.input {
   .what__text {
     padding-top: 3.125rem;
     translate: 0 3.125rem;
+  }
+
+  .what__btn {
+    min-width: 100%;
   }
 
   .item-what__img {
@@ -2336,18 +2342,6 @@ textarea.input {
 @supports not (font-size: clamp( 1.375rem , 1.2196601942rem  +  0.7766990291vw , 1.875rem )) {
     .button {
       font-size: calc(1.375rem + 0.5 * (100vw - 20rem) / 64.375);
-    }
-}
-
-@supports (min-height: clamp( 3.6875rem , 3.2797330097rem  +  2.0388349515vw , 5rem )) {
-    .button {
-      min-height: clamp( 3.6875rem , 3.2797330097rem  +  2.0388349515vw , 5rem );
-    }
-}
-
-@supports not (min-height: clamp( 3.6875rem , 3.2797330097rem  +  2.0388349515vw , 5rem )) {
-    .button {
-      min-height: calc(3.6875rem + 1.3125 * (100vw - 20rem) / 64.375);
     }
 }
 
@@ -2772,30 +2766,6 @@ textarea.input {
       margin-bottom: calc(1.875rem + 2.5 * (100vw - 20rem) / 64.375);
     }
 }
-
-@supports (padding-top: clamp( 0.6875rem , 0.5904126214rem  +  0.4854368932vw , 1rem )) {
-    .marque {
-      padding-top: clamp( 0.6875rem , 0.5904126214rem  +  0.4854368932vw , 1rem );
-    }
-}
-
-@supports not (padding-top: clamp( 0.6875rem , 0.5904126214rem  +  0.4854368932vw , 1rem )) {
-    .marque {
-      padding-top: calc(0.6875rem + 0.3125 * (100vw - 20rem) / 64.375);
-    }
-}
-
-@supports (padding-bottom: clamp( 0.6875rem , 0.5904126214rem  +  0.4854368932vw , 1rem )) {
-    .marque {
-      padding-bottom: clamp( 0.6875rem , 0.5904126214rem  +  0.4854368932vw , 1rem );
-    }
-}
-
-@supports not (padding-bottom: clamp( 0.6875rem , 0.5904126214rem  +  0.4854368932vw , 1rem )) {
-    .marque {
-      padding-bottom: calc(0.6875rem + 0.3125 * (100vw - 20rem) / 64.375);
-    }
-}
 }
 
 @media (min-width: 62em) and (max-width: 100em) {
@@ -3102,6 +3072,32 @@ textarea.input {
   .experts__wrapper.swiper-wrapper {
     gap: 1.25rem;
   }
+}
+
+@media (min-width: 30em) and (max-width: 100em) {
+@supports (padding-top: clamp( 0.6875rem , 0.5535714286rem  +  0.4464285714vw , 1rem )) {
+    .marque {
+      padding-top: clamp( 0.6875rem , 0.5535714286rem  +  0.4464285714vw , 1rem );
+    }
+}
+
+@supports not (padding-top: clamp( 0.6875rem , 0.5535714286rem  +  0.4464285714vw , 1rem )) {
+    .marque {
+      padding-top: calc(0.6875rem + 0.3125 * (100vw - 30rem) / 70);
+    }
+}
+
+@supports (padding-bottom: clamp( 0.6875rem , 0.5535714286rem  +  0.4464285714vw , 1rem )) {
+    .marque {
+      padding-bottom: clamp( 0.6875rem , 0.5535714286rem  +  0.4464285714vw , 1rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 0.6875rem , 0.5535714286rem  +  0.4464285714vw , 1rem )) {
+    .marque {
+      padding-bottom: calc(0.6875rem + 0.3125 * (100vw - 30rem) / 70);
+    }
+}
 }
 
 @media (any-hover: hover) {
