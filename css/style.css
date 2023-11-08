@@ -63,7 +63,7 @@
 .text-btn,
 .title,
 .button {
-  font-family: "Gropled", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 :root {
@@ -2218,7 +2218,6 @@ textarea.input {
 @media (max-width: 29.99875em) {
   .button {
     padding: 1.125rem 2.25rem;
-    line-height: 28.8px;
   }
 
   .marque__inner .title_h3 {
