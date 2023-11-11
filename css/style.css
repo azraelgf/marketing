@@ -1597,17 +1597,6 @@ textarea.input {
     font-size: 1.3125rem;
   }
 
-  .feedback__contacts .mobile-social {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .feedback__contacts .mobile-social__item:nth-child(3),
-  .feedback__contacts .mobile-social__item:last-child {
-    -ms-grid-column-span: 2;
-    grid-column: span 2;
-  }
-
   .mobile-social__link {
     font-size: 1.875rem;
   }
