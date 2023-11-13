@@ -471,12 +471,6 @@ textarea.input {
   pointer-events: none;
 }
 
-.title.hero__subtitle {
-  text-transform: initial;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-}
-
 .text-main {
   line-height: 120%;
 }
@@ -2284,6 +2278,12 @@ textarea.input {
 
   .marque__inner .title_h3 {
     font-size: 1.5rem;
+  }
+
+  .title.hero__subtitle {
+    text-transform: initial;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
   }
 
   .d-flex__item:last-child {
