@@ -596,7 +596,6 @@ textarea.input {
 .header._header-scroll {
   padding-bottom: 0.625rem;
   position: fixed;
-  z-index: 10;
   padding-top: 0.625rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -2071,7 +2070,7 @@ textarea.input {
     content: "";
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 6.25rem;
     top: 0;
     left: -100%;
     background-color: var(--objects-rose);
@@ -2205,6 +2204,10 @@ textarea.input {
 }
 
 @media (max-width: 61.99875em) and (max-width: 29.99875em) {
+  .header::before {
+    height: 3.125rem;
+  }
+
   .menu__body {
     padding: 4.6875rem 0.9375rem;
   }
