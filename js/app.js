@@ -3382,6 +3382,7 @@
         return iframe;
     }
     videoInit(".video-block__value");
+    if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) document.documentElement.classList.add("ios");
     window["FLS"] = false;
     isWebp();
     menuInit();

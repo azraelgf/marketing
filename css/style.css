@@ -2095,6 +2095,10 @@ textarea.input {
     overflow-y: auto;
   }
 
+  .ios .menu__body {
+    height: calc(100vh + 2.5rem);
+  }
+
   .menu__list {
     gap: 1.25rem;
     -ms-flex-wrap: wrap;
